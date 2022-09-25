@@ -15,8 +15,7 @@
     "declarationMap": true,
     "noImplicitAny": true,
     "declaration": true,
-    "sourceMap": true,
-    "watch": true
+    "sourceMap": true
   },
   "include": ["."],
   "exclude": ["dist", "node_modules", "**/*.spec.ts"]
