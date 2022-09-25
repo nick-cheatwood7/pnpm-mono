@@ -1,0 +1,16 @@
+{
+  "name": "@pnpm-mono/api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "dist/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "build": "esbuild index.ts --bundle --platform=node --target=node14 --outfile=dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
