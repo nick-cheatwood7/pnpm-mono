@@ -2,11 +2,33 @@
   "name": "pnpm-mono",
   "version": "1.0.0",
   "description": "",
+  "private": true,
+  "engines": {
+    "node": ">=14.0.0",
+    "pnpm": ">=7.0.0",
+    "yarn": "please-use-pnpm",
+    "npm:": "please-use-pnpm"
+  },
   "scripts": {
     "build:all": "pnpm run --parallel -r build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint '**/*.{js,ts}' --quiet --fix",
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint": "8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "4.8.3"
+  }
 }
