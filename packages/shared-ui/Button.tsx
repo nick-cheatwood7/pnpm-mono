@@ -1,7 +1,7 @@
 import React, { MouseEventHandler } from "react";
 
 interface IProps {
-  onClick: MouseEventHandler<HTMLButtonElement>;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
   children: React.ReactNode;
 }
 
